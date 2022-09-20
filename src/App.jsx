@@ -15,7 +15,7 @@ const Carousel = () => {
 function App() {
   return (
     <div className="">
-      <Carousel />
+      {/* <Carousel /> */}
       <MainContent />
     </div>
   );
