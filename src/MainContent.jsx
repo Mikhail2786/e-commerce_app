@@ -1,7 +1,7 @@
 import { useState } from "react";
-import minus from "./assets/images/minus.svg";
-import plus from "./assets/images/plus.svg";
-import cartImg from "./assets/images/cart.svg";
+import minus from "../public/images/minus.svg";
+import plus from "../public/images/plus.svg";
+import cartImg from "../public/images/btn-cart.svg";
 
 const MainContent = ({
   productName,
@@ -15,7 +15,7 @@ const MainContent = ({
     <section className="product">
       <h3 className="company-name">Sneaker Company</h3>
       <h1 className="product-name">{productName}</h1>
-      <p className="product-desctiption">{description}.</p>
+      <p className="product-description">{description}.</p>
       <div className="product-price-info">
         <span className="product-price">{price} </span>
         <span className="product-discount">{discount} </span>
@@ -24,11 +24,11 @@ const MainContent = ({
       {/* Button Section */}
       <div className="product-btn-section">
         <button className="minus-btn count-btn">
-          <img src={minus} alt="minus buttom" />
+          <img src={minus} alt="minus button" />
         </button>
         <span className="product-count">0</span>
         <button className="plus-btn count-btn">
-          <img src={plus} alt="plus buttom" />
+          <img src={plus} alt="plus button" />
         </button>
       </div>
       <button className="add-to-cart-btn">

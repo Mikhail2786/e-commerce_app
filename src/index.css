@@ -29,7 +29,7 @@ body {
   letter-spacing: 1px;
 }
 
-.product-desctiption {
+.product-description {
   margin-top: 14px;
   line-height: 1.4;
   color: hsl(219, 9%, 45%);
@@ -97,6 +97,10 @@ body {
   justify-content: center;
   align-items: center;
   box-shadow: 0px 20px 19px #ffede0;
+}
+
+.add-to-cart-btn img {
+  margin-right: 15px;
 }
 
 /* ====================================================================================Main Content=========================== ============================================================== */

@@ -1,22 +1,13 @@
 import MainContent from "./MainContent";
-import product1 from "./assets/images/product-1.jpg";
+import { carouselData } from "./carouselData";
+import Carousel from "./Carousel";
 import "./App.css";
-
-const Carousel = () => {
-  return (
-    <div>
-      <img src={product1} />
-      <button>prev</button>
-      <button>next</button>
-    </div>
-  );
-};
 
 function App() {
   return (
     <div className="">
-      {/* <Carousel /> */}
-      <MainContent />
+      <Carousel slides={carouselData} />
+      {/* <MainContent /> */}
     </div>
   );
 }
