@@ -1,30 +1,51 @@
+import { useState } from "react";
 import { carouselData } from "./carouselData";
 import previous from "/images/previous.svg";
 import next from "/images/next.svg";
 
 const Carousel = ({ slides }) => {
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlides = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlides = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  console.log(current);
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
+
   return (
     <section className="carousel">
-      <div className="carousel-arrow-container carousel-previous">
+      <div
+        className="carousel-arrow-container carousel-previous"
+        onClick={prevSlides}
+      >
         <img src={previous} className="carousel-arrow" />
       </div>
-      <div className="carousel-arrow-container carousel-next">
+      <div
+        className="carousel-arrow-container carousel-next"
+        onClick={nextSlides}
+      >
         <img src={next} className="carousel-arrow" />
       </div>
       {/* mapping over the carouselData array in carouselData.js */}
-      {carouselData.map((c, i) => {
+      {carouselData.map((c, index) => {
         return (
           <div
+            key={c.id}
             className={`carousel-image-container ${
-              i === 0 ? "active" : "hidden"
+              index === current ? "slide active" : "slide hidden"
             }`}
           >
-            <img
-              src={c.image}
-              alt={c.alt}
-              key={c.id}
-              className="carousel-image"
-            />
+            {index === current && (
+              <img src={c.image} alt={c.alt} className="carousel-image" />
+            )}
           </div>
         );
       })}
