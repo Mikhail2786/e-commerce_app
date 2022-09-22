@@ -5,17 +5,35 @@ import next from "/images/next.svg";
 const Carousel = ({ slides }) => {
   return (
     <section className="carousel">
-      <div>
-        <img src={previous} className="carousel-previous" />
+      <div className="carousel-arrow-container carousel-previous">
+        <img src={previous} className="carousel-arrow" />
       </div>
-      <div>
-        <img src={next} className="carousel-next" />
+      <div className="carousel-arrow-container carousel-next">
+        <img src={next} className="carousel-arrow" />
       </div>
-      {carouselData.map((c) => {
-        return <img src={c.image} alt={c.alt} key={c.id} />;
+      {/* mapping over the carouselData array in carouselData.js */}
+      {carouselData.map((c, i) => {
+        return (
+          <div
+            className={`carousel-image-container ${
+              i === 0 ? "active" : "hidden"
+            }`}
+          >
+            <img
+              src={c.image}
+              alt={c.alt}
+              key={c.id}
+              className="carousel-image"
+            />
+          </div>
+        );
       })}
     </section>
   );
 };
 
 export default Carousel;
+
+// const Banner = ({ active, children }) => (
+//   4  <div className={`banner ${active ? "active" : ""}`}>{children}</div>
+//   5);

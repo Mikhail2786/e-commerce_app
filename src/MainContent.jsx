@@ -1,7 +1,7 @@
 import { useState } from "react";
-import minus from "../public/images/minus.svg";
-import plus from "../public/images/plus.svg";
-import cartImg from "../public/images/btn-cart.svg";
+import minus from "/images/minus.svg";
+import plus from "/images/plus.svg";
+import cartImg from "/images/btn-cart.svg";
 
 const MainContent = ({
   productName,
