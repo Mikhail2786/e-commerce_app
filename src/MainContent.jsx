@@ -10,6 +10,17 @@ const MainContent = ({
   discount,
   oldPrice,
 }) => {
+  // initialising the state for count
+  const [count, setCount] = useState(0);
+
+  const incrementCount = () => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
+  const decrementCount = () => {
+    setCount((prevCount) => prevCount - 1);
+  };
+
   return (
     // Product Information
     <section className="product">
@@ -23,11 +34,21 @@ const MainContent = ({
       </div>
       {/* Button Section */}
       <div className="product-btn-section">
-        <button className="minus-btn count-btn">
-          <img src={minus} alt="minus button" />
-        </button>
-        <span className="product-count">0</span>
-        <button className="plus-btn count-btn">
+        {count < 1 ? (
+          <button
+            onClick={decrementCount}
+            className="minus-btn count-btn"
+            disabled
+          >
+            <img src={minus} alt="minus button" />
+          </button>
+        ) : (
+          <button onClick={decrementCount} className="minus-btn count-btn">
+            <img src={minus} alt="minus button" />
+          </button>
+        )}
+        <span className="product-count">{count}</span>
+        <button onClick={incrementCount} className="plus-btn count-btn">
           <img src={plus} alt="plus button" />
         </button>
       </div>
