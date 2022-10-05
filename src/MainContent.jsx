@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useCount, useIncrement, useDecrement } from "./CountContext";
 import minus from "/images/minus.svg";
 import plus from "/images/plus.svg";
 import cartImg from "/images/btn-cart.svg";
@@ -10,16 +10,9 @@ const MainContent = ({
   discount,
   oldPrice,
 }) => {
-  // initialising the state for count
-  const [count, setCount] = useState(0);
-
-  const incrementCount = () => {
-    setCount((prevCount) => prevCount + 1);
-  };
-
-  const decrementCount = () => {
-    setCount((prevCount) => prevCount - 1);
-  };
+  const count = useCount();
+  const incrementCount = useIncrement();
+  const decrementCount = useDecrement();
 
   return (
     // Product Information
