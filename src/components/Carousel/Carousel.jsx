@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { carouselData } from "./carouselData";
-import previous from "/images/previous.svg";
-import next from "/images/next.svg";
+import { carouselData } from "../../carouselData";
+import previous from "../../assets/images/previous.svg";
+import next from "../../assets/images/next.svg";
 
 const Carousel = ({ slides }) => {
   const [current, setCurrent] = useState(0);

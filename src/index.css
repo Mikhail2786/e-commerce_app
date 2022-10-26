@@ -52,6 +52,18 @@ body {
   margin-right: auto;
 }
 
+.header-cart-quantity {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff7d1a;
+  color: #fff;
+  padding: 0px 7px;
+  pointer-events: none;
+  right: 15%;
+  top: 2%;
+  font-size: 14px;
+}
+
 .header-avatar {
   height: 100%;
   margin-left: 20px;
@@ -80,9 +92,9 @@ body {
 }
 
 .cart-title {
-  padding-top: 20px;
+  padding-top: 22px;
   padding-left: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   border-bottom: 1px solid #b6bcc8;
 }
 
@@ -90,7 +102,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 65px 0 50px 0;
+  padding: 30px 25px 30px 25px;
 }
 
 .cart-text {
@@ -100,6 +112,61 @@ body {
 /* 
 ============================================================================
 ===================================Cart=================================================================================================================
+*/
+
+/* 
+============================================================================
+===================================CartItem=================================================================================================================
+*/
+
+.cart-item-container {
+  color: #68707d;
+}
+
+.cart-item-information {
+  display: flex;
+}
+
+.cart-item-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin-right: 18px;
+}
+
+.cart-item-text {
+  line-height: 25px;
+}
+
+.item-quantity {
+  margin-left: 5px;
+}
+
+.total {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.delete-btn {
+  height: 15px;
+  align-self: center;
+}
+
+.checkout-btn {
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  color: white;
+  background: #ff7d1a;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  width: 100%;
+  height: 60px;
+}
+/* 
+============================================================================
+===================================CartItem=================================================================================================================
 */
 
 /* 
