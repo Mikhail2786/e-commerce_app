@@ -6,7 +6,8 @@ import cartImg from "../../assets/images/btn-cart.svg";
 const MainContent = ({ product }) => {
   const { productName, description, price, discount, oldPrice } = product;
 
-  const { quantity, setQuantity } = UseQuantityContext();
+  const { quantity, setQuantity, itemQuantity, setItemQuantity } =
+    UseQuantityContext();
 
   const incrementQuantity = () => {
     setQuantity((prevQuantity) => prevQuantity + 1);
@@ -17,7 +18,9 @@ const MainContent = ({ product }) => {
   };
 
   const addToCart = () => {
-    console.log(quantity);
+    setItemQuantity(quantity);
+    // setItemQuantity((prevItemQuantity) => prevItemQuantity + );
+    console.log(itemQuantity);
   };
 
   return (

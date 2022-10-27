@@ -8,7 +8,7 @@ import menuCart from "../../assets/images/menu-cart.svg";
 import avatar from "../../assets/images/avatar.png";
 
 const Header = () => {
-  const { quantity } = UseQuantityContext();
+  const { quantity, itemQuantity } = UseQuantityContext();
   const [cartIsOpen, setCartIsOpen] = useState(false);
 
   const openCart = () => {
@@ -23,8 +23,8 @@ const Header = () => {
     <header className="header">
       <img src={menu} alt="menu icon" className="header-menu-icon" />
       <img src={logo} alt="company logo" className="header-company-logo" />
-      {quantity > 0 ? (
-        <span className="header-cart-quantity">{quantity}</span>
+      {itemQuantity > 0 ? (
+        <span className="header-cart-quantity">{itemQuantity}</span>
       ) : null}
       <div onClick={openCart}>
         <img src={menuCart} alt="cart icon" className="header-menu-cart" />

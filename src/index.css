@@ -81,7 +81,7 @@ body {
 
 .cart-container {
   position: absolute;
-  top: 12%;
+  top: 10%;
   left: 5%;
   height: 36vh;
   width: 90%;
@@ -108,6 +108,7 @@ body {
 .cart-text {
   font-weight: bold;
   color: hsl(219, 9%, 45%);
+  padding: 50px;
 }
 /* 
 ============================================================================
