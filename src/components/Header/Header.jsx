@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { UseQuantityContext } from "../../Context/QuantityContext";
+import MobileMenu from "../MobileMenu/MobileMenu";
 import Cart from "../Cart/Cart";
 import Backdrop from "../Backdrop/Backdrop";
 import menu from "../../assets/images/menu.svg";
@@ -8,8 +9,9 @@ import menuCart from "../../assets/images/menu-cart.svg";
 import avatar from "../../assets/images/avatar.png";
 
 const Header = () => {
-  const { quantity, itemQuantity } = UseQuantityContext();
+  const { itemQuantity } = UseQuantityContext();
   const [cartIsOpen, setCartIsOpen] = useState(false);
+  const [mobileMenIsOpen, setMobileMenIsOpen] = useState(false);
 
   const openCart = () => {
     setCartIsOpen((prevState) => !prevState);
@@ -19,9 +21,21 @@ const Header = () => {
     setCartIsOpen((prevState) => !prevState);
   };
 
+  const openMobileMenu = () => {
+    setMobileMenIsOpen((prevState) => !prevState);
+  };
+
+  const CloseMobileMenu = () => {
+    setMobileMenIsOpen((prevState) => !prevState);
+  };
+
   return (
     <header className="header">
-      <img src={menu} alt="menu icon" className="header-menu-icon" />
+      <div onClick={openMobileMenu}>
+        <img src={menu} alt="menu icon" className="header-menu-icon" />
+      </div>
+      {mobileMenIsOpen && <MobileMenu handleClose={CloseMobileMenu} />}
+      {mobileMenIsOpen && <Backdrop onClick={CloseMobileMenu} />}
       <img src={logo} alt="company logo" className="header-company-logo" />
       {itemQuantity > 0 ? (
         <span className="header-cart-quantity">{itemQuantity}</span>
