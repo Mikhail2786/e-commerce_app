@@ -31,16 +31,17 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div onClick={openMobileMenu}>
+      <div onClick={openMobileMenu} className="cursor">
         <img src={menu} alt="menu icon" className="header-menu-icon" />
       </div>
       {mobileMenIsOpen && <MobileMenu handleClose={CloseMobileMenu} />}
       {mobileMenIsOpen && <Backdrop onClick={CloseMobileMenu} />}
       <img src={logo} alt="company logo" className="header-company-logo" />
-      {itemQuantity > 0 ? (
-        <span className="header-cart-quantity">{itemQuantity}</span>
-      ) : null}
-      <div onClick={openCart}>
+
+      <div className="cart-img-container cursor" onClick={openCart}>
+        {itemQuantity > 0 ? (
+          <div className="header-cart-quantity">{itemQuantity}</div>
+        ) : null}
         <img src={menuCart} alt="cart icon" className="header-menu-cart" />
       </div>
       {cartIsOpen && <Cart />}

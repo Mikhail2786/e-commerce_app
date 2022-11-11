@@ -21,11 +21,11 @@ const CartItem = ({ product }) => {
           <span className="item-quantity">{quantity}</span>
           <span className="total">{`£${quantity * 125}.00`}</span>
         </div>
-        <button className="delete-btn" onClick={deleteItem}>
+        <button className="delete-btn cursor" onClick={deleteItem}>
           <img src={deleteIcon} alt="delete icon" />
         </button>
       </div>
-      <button className="checkout-btn">Checkout</button>
+      <button className="checkout-btn cursor main-btn">Checkout</button>
     </div>
   );
 };

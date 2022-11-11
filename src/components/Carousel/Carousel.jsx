@@ -21,18 +21,18 @@ const Carousel = ({ slides }) => {
 
   return (
     <section className="carousel">
-      <div
-        className="carousel-arrow-container carousel-previous"
+      <button
+        className="carousel-arrow-btn carousel-previous cursor"
         onClick={prevSlides}
       >
         <img src={previous} className="carousel-arrow" />
-      </div>
-      <div
-        className="carousel-arrow-container carousel-next"
+      </button>
+      <button
+        className="carousel-arrow-btn carousel-next cursor"
         onClick={nextSlides}
       >
         <img src={next} className="carousel-arrow" />
-      </div>
+      </button>
       {/* mapping over the carouselData array in carouselData.js */}
       {carouselData.map((c, index) => {
         return (

@@ -4,26 +4,26 @@ const MobileMenu = ({ handleClose }) => {
   return (
     <nav className="mobile-nav-container">
       <div>
-        <button className="close-menu-btn" onClick={handleClose}>
+        <button className="close-menu-btn curso r" onClick={handleClose}>
           <img src={closeMenu} alt="Close menu icon" />
         </button>
       </div>
 
       <ul className="nav-list">
         <li className="nav-list-item">
-          <a>Collections</a>
+          <a href="#">Collections</a>
         </li>
         <li className="nav-list-item">
-          <a>Men</a>
+          <a href="#">Men</a>
         </li>
         <li className="nav-list-item">
-          <a>Women</a>
+          <a href="#">Women</a>
         </li>
         <li className="nav-list-item">
-          <a>About</a>
+          <a href="#">About</a>
         </li>
         <li className="nav-list-item">
-          <a>Contact</a>
+          <a href="#">Contact</a>
         </li>
       </ul>
     </nav>

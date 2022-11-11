@@ -39,22 +39,28 @@ const MainContent = ({ product }) => {
         {quantity < 1 ? (
           <button
             onClick={decrementQuantity}
-            className="minus-btn count-btn"
+            className="minus-btn count-btn cursor"
             disabled
           >
             <img src={minus} alt="minus button" />
           </button>
         ) : (
-          <button onClick={decrementQuantity} className="minus-btn count-btn">
+          <button
+            onClick={decrementQuantity}
+            className="minus-btn count-btn cursor"
+          >
             <img src={minus} alt="minus button" />
           </button>
         )}
         <span className="product-count">{quantity}</span>
-        <button onClick={incrementQuantity} className="plus-btn count-btn">
+        <button
+          onClick={incrementQuantity}
+          className="plus-btn count-btn cursor"
+        >
           <img src={plus} alt="plus button" />
         </button>
       </div>
-      <button className="add-to-cart-btn" onClick={addToCart}>
+      <button className="add-to-cart-btn cursor main-btn" onClick={addToCart}>
         <img src={cartImg} alt="cart image" />
         Add to cart
       </button>

@@ -3,7 +3,7 @@ import CartItem from "../CartItems/CartItems";
 import { productData } from "../../productData";
 
 const Cart = () => {
-  const { itemQuantity, quantity } = UseQuantityContext();
+  const { itemQuantity } = UseQuantityContext();
 
   return (
     <div className="cart-container">

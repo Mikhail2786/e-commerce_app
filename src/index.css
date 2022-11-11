@@ -13,6 +13,15 @@ body {
   height: 100%;
 }
 
+.cursor {
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: black;
+  box-shadow: 0px 20px 19px #ccc;
+  transition: 0.5s;
+}
 /* 
 ============================================================================
 =================================Backdrop=================================================================================================================
@@ -42,7 +51,6 @@ body {
   align-items: center;
   padding: 20px 25px 20px 25px;
   height: 68px;
-  border: 1px solid black;
 }
 
 .header-menu-icon {
@@ -53,16 +61,20 @@ body {
   margin-right: auto;
 }
 
+.header-menu-cart {
+  height: 20px;
+}
+
 .header-cart-quantity {
   position: absolute;
   border-radius: 50%;
   background-color: #ff7d1a;
   color: #fff;
-  padding: 0px 7px;
+  padding: 2px 7px;
   pointer-events: none;
-  right: 15%;
-  top: 2%;
-  font-size: 14px;
+  right: 59px;
+  top: 14px;
+  font-size: 11px;
 }
 
 .header-avatar {
@@ -111,6 +123,17 @@ body {
 .nav-list li {
   list-style: none;
 }
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list a:hover {
+  color: #ff7d1a;
+  font-size: 30px;
+  transition: 1s;
+}
 /*
 ========================================================================================================
 =================================Mobile menu=========================================================   =================================================================================================================
@@ -124,9 +147,10 @@ body {
 .cart-container {
   position: absolute;
   top: 10%;
-  left: 5%;
+  right: 5%;
   height: 36vh;
   width: 90%;
+  max-width: 380px;
   border: black 1px solid;
   border-radius: 10px;
   background-color: #fff;
@@ -288,7 +312,6 @@ body {
 .count-btn {
   border: none;
   background: hsl(223, 64%, 98%);
-  cursor: pointer;
 }
 
 .product-count {
@@ -333,7 +356,7 @@ body {
   align-items: center;
 }
 
-.carousel-arrow-container {
+.carousel-arrow-btn {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -342,6 +365,7 @@ body {
   height: 45px;
   width: 45px;
   border-radius: 50%;
+  border: none;
   z-index: 1;
 }
 
@@ -356,7 +380,7 @@ body {
 .carousel-image-container {
   position: relative;
   width: 100vw;
-  height: 295px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -372,6 +396,18 @@ body {
   display: none;
 }
 
+@media (min-width: 400px) and (max-width: 768px) {
+  .carousel-image-container {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .carousel {
+    max-width: 400px;
+    display: flex;
+    margin: auto;
+  }
+}
 /* 
 ============================================================================
 ===================================Carousel=============================================================================================================
