@@ -1,0 +1,50 @@
+/* Carousel */
+
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-arrow-btn {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  z-index: 1;
+}
+
+.carousel-previous {
+  left: 5%;
+}
+
+.carousel-next {
+  right: 5%;
+}
+
+.carousel-image-container {
+  position: relative;
+  width: 100vw;
+  height: 350px;
+  overflow: hidden;
+}
+
+.carousel-image {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hidden {
+  display: none;
+}

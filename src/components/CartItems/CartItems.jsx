@@ -1,6 +1,7 @@
 import { UseQuantityContext } from "../../Context/QuantityContext";
 import productImage from "../../assets/images/image-product-1-thumbnail.jpg";
 import deleteIcon from "../../assets/images/delete.svg";
+import "./CartItem.css";
 
 const CartItem = ({ product }) => {
   const { productTitle, price } = product;

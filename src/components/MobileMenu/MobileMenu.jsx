@@ -1,14 +1,14 @@
 import closeMenu from "../../assets/images/close.svg";
+import "./MobileMenu.css";
 
 const MobileMenu = ({ handleClose }) => {
   return (
-    <nav className="mobile-nav-container">
+    <div className="mobile-nav-container">
       <div>
         <button className="close-menu-btn curso r" onClick={handleClose}>
           <img src={closeMenu} alt="Close menu icon" />
         </button>
       </div>
-
       <ul className="nav-list">
         <li className="nav-list-item">
           <a href="#">Collections</a>
@@ -26,7 +26,7 @@ const MobileMenu = ({ handleClose }) => {
           <a href="#">Contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
   );
 };
 

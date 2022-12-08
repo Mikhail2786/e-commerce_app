@@ -1,6 +1,7 @@
 import { UseQuantityContext } from "../../Context/QuantityContext";
 import CartItem from "../CartItems/CartItems";
 import { productData } from "../../productData";
+import "./Cart.css";
 
 const Cart = () => {
   const { itemQuantity } = UseQuantityContext();

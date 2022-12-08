@@ -1,0 +1,40 @@
+/* Mobile menu */
+
+.mobile-nav-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 3;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.nav-list {
+  margin-top: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close-menu-btn {
+  background-color: #fff;
+  border: none;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+
+.nav-list a:hover {
+  color: #ff7d1a;
+  font-size: 30px;
+  transition: 1s;
+}

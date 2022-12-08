@@ -1,0 +1,11 @@
+/* Backdrop */
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  background-color: #000000bf;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}

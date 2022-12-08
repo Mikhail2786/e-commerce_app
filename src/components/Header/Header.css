@@ -1,0 +1,71 @@
+/* 
+============================================================================
+=================================Header=================================================================================================================
+*/
+
+.header {
+  margin-top: 2rem;
+}
+
+nav.header-nav-container {
+  padding: 0 3rem 3rem 3rem;
+  gap: 1.8rem;
+  align-items: center;
+}
+
+.inner-nav-container {
+  margin-right: auto;
+}
+
+.nav-content {
+  display: flex;
+  align-items: baseline;
+  gap: 1.6rem;
+}
+
+img .header-menu-icon {
+  height: 1.4rem;
+}
+
+.header-company-logo {
+  width: 12rem;
+  height: 1.9rem;
+}
+
+div .avatar-header-container {
+  gap: 1.8rem;
+}
+
+.header-menu-cart {
+  width: 2rem;
+  height: 1.8rem;
+}
+
+.cart-img-container {
+  position: relative;
+}
+
+.header-cart-quantity {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ff7d1a;
+  color: #fff;
+  padding: 2px 7px;
+  pointer-events: none;
+  left: 13px;
+  bottom: 14px;
+  font-size: 11px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+div .logo-img-container {
+  height: 100%;
+}
+
+img.header-avatar {
+  height: 3rem;
+}

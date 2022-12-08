@@ -3,6 +3,8 @@ import minus from "../../assets/images/minus.svg";
 import plus from "../../assets/images/plus.svg";
 import cartImg from "../../assets/images/btn-cart.svg";
 
+import "./MainContent.css";
+
 const MainContent = ({ product }) => {
   const { productName, description, price, discount, oldPrice } = product;
 

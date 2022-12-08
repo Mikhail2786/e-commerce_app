@@ -1,0 +1,35 @@
+/* Cart */
+
+.cart-container {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  height: 40%;
+  width: 90%;
+  max-width: 380px;
+  border: black 1px solid;
+  border-radius: 10px;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.cart-title {
+  padding-top: 22px;
+  padding-left: 25px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #b6bcc8;
+}
+
+.cart-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 66%;
+}
+
+.cart-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: hsl(219, 9%, 45%);
+  padding: 50px;
+}
