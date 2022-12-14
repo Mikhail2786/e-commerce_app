@@ -44,7 +44,7 @@ const Carousel = ({ slides }) => {
             }`}
           >
             {index === current && (
-              <img src={c.image} alt={c.alt} className="carousel-image" />
+              <img src={c.mainImage} alt={c.alt} className="carousel-image" />
             )}
           </div>
         );

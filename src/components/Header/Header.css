@@ -23,8 +23,8 @@ nav.header-nav-container {
   gap: 1.6rem;
 }
 
-img .header-menu-icon {
-  height: 1.4rem;
+.header-menu-icon {
+  height: 1.5rem;
 }
 
 .header-company-logo {
@@ -50,11 +50,11 @@ div .avatar-header-container {
   border-radius: 50%;
   background-color: #ff7d1a;
   color: #fff;
-  padding: 2px 7px;
+  padding: 0.2rem 0.7rem;
   pointer-events: none;
-  left: 13px;
-  bottom: 14px;
-  font-size: 11px;
+  left: 1.3rem;
+  bottom: 1.4rem;
+  font-size: 1.1rem;
 }
 
 .flex {
@@ -67,5 +67,10 @@ div .logo-img-container {
 }
 
 img.header-avatar {
-  height: 3rem;
+  height: 3.8rem;
+}
+
+img.header-avatar:hover {
+  border: 0.2rem solid #ff7d1a;
+  border-radius: 50%;
 }

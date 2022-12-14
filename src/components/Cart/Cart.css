@@ -4,7 +4,7 @@
   position: absolute;
   top: 10%;
   right: 5%;
-  height: 40%;
+  height: 29.2rem;
   width: 90%;
   max-width: 380px;
   border: black 1px solid;
@@ -14,9 +14,8 @@
 }
 
 .cart-title {
-  padding-top: 22px;
-  padding-left: 25px;
-  padding-bottom: 30px;
+  font-size: 1.8rem;
+  padding: 2.2rem 0 3rem 2.5rem;
   border-bottom: 1px solid #b6bcc8;
 }
 
@@ -31,5 +30,5 @@
   font-size: 1.6rem;
   font-weight: bold;
   color: hsl(219, 9%, 45%);
-  padding: 50px;
+  padding: 5rem;
 }

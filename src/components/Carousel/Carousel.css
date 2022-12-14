@@ -9,14 +9,18 @@
   align-items: center;
 }
 
+img.carousel-arrow {
+  height: 1.8rem;
+}
+
 .carousel-arrow-btn {
   position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  height: 45px;
-  width: 45px;
+  height: 4.5rem;
+  width: 4.5rem;
   border-radius: 50%;
   border: none;
   z-index: 1;
@@ -33,7 +37,7 @@
 .carousel-image-container {
   position: relative;
   width: 100vw;
-  height: 350px;
+  height: 35rem;
   overflow: hidden;
 }
 
