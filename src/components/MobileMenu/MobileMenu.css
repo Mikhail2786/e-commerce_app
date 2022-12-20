@@ -5,17 +5,17 @@
   top: 0;
   left: 0;
   width: 65vw;
-  height: 100vh;
+  height: 200vh;
   background-color: #fff;
   z-index: 3;
-  padding-top: 30px;
-  padding-left: 30px;
+  padding-top: 1.563rem;
+  padding-left: 1.563rem;
 }
 
 .nav-list {
-  margin-top: 50px;
-  line-height: 50px;
-  font-size: 20px;
+  margin-top: 2.125rem;
+  line-height: 2.8;
+  font-size: 1rem;
   font-weight: bold;
 }
 

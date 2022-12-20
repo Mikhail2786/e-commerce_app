@@ -10,7 +10,7 @@
 }
 
 img.carousel-arrow {
-  height: 1.8rem;
+  height: 0.9rem;
 }
 
 .carousel-arrow-btn {
@@ -19,8 +19,8 @@ img.carousel-arrow {
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  height: 4.5rem;
-  width: 4.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   border-radius: 50%;
   border: none;
   z-index: 1;
@@ -37,7 +37,8 @@ img.carousel-arrow {
 .carousel-image-container {
   position: relative;
   width: 100vw;
-  height: 35rem;
+  height: 19rem;
+  max-height: 23rem;
   overflow: hidden;
 }
 

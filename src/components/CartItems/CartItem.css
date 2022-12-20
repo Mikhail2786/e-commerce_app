@@ -2,7 +2,7 @@
 
 .cart-item-container {
   color: #68707d;
-  padding: 2.8rem;
+  padding: 0px 1.4rem;
 }
 
 .cart-item-information {
@@ -10,15 +10,15 @@
 }
 
 .cart-item-image {
-  height: 5rem;
-  width: 5rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 5px;
-  margin-right: 1.8rem;
+  margin-right: 1rem;
 }
 
 .cart-item-text {
-  line-height: 2.5rem;
-  font-size: 1.6rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 .item-quantity {
@@ -36,7 +36,7 @@
 }
 
 .delete-btn img {
-  height: 1.8rem;
+  height: 1rem;
 }
 
 .checkout-btn {
@@ -45,9 +45,9 @@
   margin-top: 1.5rem;
   color: white;
   background: #ff7d1a;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   border: none;
   width: 100%;
-  height: 6rem;
+  height: 4rem;
 }

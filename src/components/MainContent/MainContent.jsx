@@ -31,54 +31,61 @@ const MainContent = ({ product }) => {
     // setItemQuantity((prevItemQuantity) => prevItemQuantity + );
   };
 
-  const isDesktop = useMediaQuery("(min-width: 768px)");
+  const isDesktop = useMediaQuery("(min-width: 1000px)");
 
   return (
     // Product Information
-    <section className="grid-container">
+    <main className="grid-container">
       {isDesktop ? <ProductDisplay /> : <Carousel slides={carouselData} />}
 
       <article className="product">
         <h3 className="company-name">Sneaker Company</h3>
         <h1 className="product-name">{productName}</h1>
-        <p className="product-description">{description}.</p>
+        <p className="product-description">{description}</p>
         <div className="product-price-info">
           <span className="product-price">{price} </span>
           <span className="product-discount">{discount} </span>
           <span className="original-price">{oldPrice}</span>
         </div>
         {/* Button Section */}
-        <div className="product-btn-section">
-          {quantity < 1 ? (
+        <div>
+          <div className="product-btn-section">
+            {quantity < 1 ? (
+              <button
+                onClick={decrementQuantity}
+                className="minus-btn count-btn cursor"
+                disabled
+              >
+                <img src={minus} alt="minus button" />
+              </button>
+            ) : (
+              <button
+                onClick={decrementQuantity}
+                className="minus-btn count-btn cursor"
+              >
+                <img src={minus} alt="minus button" />
+              </button>
+            )}
+            <span className="product-count">{quantity}</span>
             <button
-              onClick={decrementQuantity}
-              className="minus-btn count-btn cursor"
-              disabled
+              onClick={incrementQuantity}
+              className="plus-btn count-btn cursor"
             >
-              <img src={minus} alt="minus button" />
+              <img src={plus} alt="plus button" />
             </button>
-          ) : (
+          </div>
+          <div className="add-btn-container">
             <button
-              onClick={decrementQuantity}
-              className="minus-btn count-btn cursor"
+              className="add-to-cart-btn cursor main-btn"
+              onClick={addToCart}
             >
-              <img src={minus} alt="minus button" />
+              <img src={cartImg} alt="cart image" />
+              Add to cart
             </button>
-          )}
-          <span className="product-count">{quantity}</span>
-          <button
-            onClick={incrementQuantity}
-            className="plus-btn count-btn cursor"
-          >
-            <img src={plus} alt="plus button" />
-          </button>
+          </div>
         </div>
-        <button className="add-to-cart-btn cursor main-btn" onClick={addToCart}>
-          <img src={cartImg} alt="cart image" />
-          Add to cart
-        </button>
       </article>
-    </section>
+    </main>
   );
 };
 

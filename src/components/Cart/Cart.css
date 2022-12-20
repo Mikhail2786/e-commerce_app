@@ -2,11 +2,11 @@
 
 .cart-container {
   position: absolute;
-  top: 10%;
-  right: 5%;
-  height: 29.2rem;
-  width: 90%;
-  max-width: 380px;
+  top: 13%;
+  right: 4%;
+  height: 36%;
+  width: 92%;
+  max-width: 370px;
   border: black 1px solid;
   border-radius: 10px;
   background-color: #fff;
@@ -14,8 +14,8 @@
 }
 
 .cart-title {
-  font-size: 1.8rem;
-  padding: 2.2rem 0 3rem 2.5rem;
+  font-size: 1rem;
+  padding: 1.2rem 0 1.5rem 1.3rem;
   border-bottom: 1px solid #b6bcc8;
 }
 
@@ -23,11 +23,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 66%;
+  height: 74%;
 }
 
 .cart-text {
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: bold;
   color: hsl(219, 9%, 45%);
   padding: 5rem;
