@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Mikhail2786.github.io/e-commerce_app",
   "name": "e-commerce_app",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -16,6 +19,7 @@
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.1.0",
+    "gh-pages": "^4.0.0",
     "vite": "^3.1.0"
   }
 }

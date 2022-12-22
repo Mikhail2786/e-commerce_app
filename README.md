@@ -22,7 +22,7 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 
 ## Overview
 
-- An e-comerce site for sneakers. Users can add products to the cart which calculates the total cose epending on quantity.
+- An e-comerce site for sneakers. Users can add products to the cart which calculates the total cost depending on quantity.
 
 ### The challenge
 
