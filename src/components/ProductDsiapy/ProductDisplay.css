@@ -27,10 +27,12 @@
   width: 5.5rem;
   height: 5.5rem;
   border-radius: 10px;
+  display: block;
 }
 
-/* .thumbnail-img: {
+.active {
   opacity: 0.5;
-  outline: 2px solid color: #ff7d1a;
-
-} */
+  outline: 0.2rem solid #ff7d1a;
+  border-radius: 10px;
+  object-fit: contain;
+}

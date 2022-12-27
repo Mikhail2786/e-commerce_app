@@ -14,7 +14,11 @@ const ProductDisplay = () => {
 
       <ul className="thumnail-container">
         {products.map((item, index) => (
-          <li key={item.id} onClick={() => setValue(index)}>
+          <li
+            key={item.id}
+            onClick={() => setValue(index)}
+            className={`${index === value && `active`}`}
+          >
             <img
               src={item.thumbnail}
               alt={item.alt}
