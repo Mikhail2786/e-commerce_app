@@ -5,7 +5,7 @@ const MobileMenu = ({ handleClose }) => {
   return (
     <div className="mobile-nav-container">
       <div>
-        <button className="close-menu-btn curso r" onClick={handleClose}>
+        <button className="close-menu-btn cursor" onClick={handleClose}>
           <img src={closeMenu} alt="Close menu icon" />
         </button>
       </div>

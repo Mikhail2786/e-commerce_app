@@ -10,7 +10,7 @@ const ProductDisplay = () => {
 
   return (
     <article className="product-display-container">
-      <img src={mainImage} alt="" className="main-img borders" />
+      <img src={mainImage} alt="" className="main-img borders cursor" />
 
       <ul className="thumnail-container">
         {products.map((item, index) => (
@@ -22,7 +22,7 @@ const ProductDisplay = () => {
             <img
               src={item.thumbnail}
               alt={item.alt}
-              className="thumbnail-img borders"
+              className="thumbnail-img borders cursor"
             />
           </li>
         ))}

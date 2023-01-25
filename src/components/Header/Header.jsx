@@ -74,7 +74,7 @@ const Header = () => {
             ) : null}
             <img src={menuCart} alt="cart icon" className="header-menu-cart" />
           </div>
-          <img src={avatar} alt="avatar" className="header-avatar" />
+          <img src={avatar} alt="avatar" className="header-avatar cursor" />
         </div>
         {cartIsOpen && <Cart />}
         {cartIsOpen && <Backdrop onClick={CloseCart} />}

@@ -1,6 +1,6 @@
 import { UseQuantityContext } from "../../Context/QuantityContext";
 import useMediaQuery from "../../Hooks/useMediaQuery";
-import ProductDisplay from "../ProductDsiapy/ProductDisplay";
+import ProductDisplay from "../ProductDisplay/ProductDisplay";
 import Carousel from "../Carousel/Carousel";
 
 import { carouselData } from "../../carouselData";
